@@ -164,6 +164,7 @@ header ul li a:hover:after {
     border-radius: 5px;
     transition: 0.4s;
     box-shadow: #31322d 10px 10px 10px;
+    cursor: pointer;
 }
 
 #OverviewSect section button:hover {
