@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+img {
+    height: 100px;
+}
+
+header {
+    overflow: hidden;
+    height: 100px;
+    background-color: #161a1d;
+}
+
+header div {
+    position: relative;
+    top: -1.5rem;
+    left: -1rem;
+    overflow: hidden;
+    height: 120px;
+}
+
+header div img {
+    height: 120px;
+}
+
+header h1 {
+    position: relative;
+    font-size: 40px;
+    color: white;
+    top: -85px;
+    left: 120px;
+}
+
+header span {
+    position: relative;
+    top: 2px;
+    width: 1px;
+    height: 10px;
+    background-color: white;
+    border: 1.5px white solid;
+    margin: 0 30px;
+}
+
+header ul {
+    position: relative;
+    right: 10px;
+}
+
+header ul li{
+    position: relative;
+    top: -87px;
+    right: 20px;
+    display: block;
+    font-size: 2.5em;
+    float: right;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+header ul li a:hover {
+    color: rgb(221, 221, 221);
+}
+
+header ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+header ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#Banner {
+    height: 700px;
+    overflow: hidden;
+}
+
+#Banner #ImgHolder img {
+    height: 1000px;
+}
+
+#Banner #BannerLogo {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    top: -1002px;
+    text-align: center;
+    background-color: #31322dAA;
+}
+
+#Banner #BannerLogo div {
+    position: relative;
+    top: 50px;
+}
+
+#Banner #BannerLogo div p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+#Banner #BannerLogo div img {
+    height: 400px;
+}
+
+#OverviewSect {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #161a1d;
+    height: 350px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#OverviewSect section {
+    margin: 40px 20px 0 20px;
+    text-align: center;
+}
+
+#OverviewSect section h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#OverviewSect section p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#OverviewSect section button {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+    box-shadow: #31322d 10px 10px 10px;
+}
+
+#OverviewSect section button:hover {
+    box-shadow: none;
+    background-color: rgb(189, 189, 189);
+}
+
+footer {
+    background-color: #0c0e0f;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+@media (max-width: 1110px) {
+    header ul li {
+        top: -85px;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1088px) {
+    #OverviewSect {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header ul li {
+        top: -80px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 890px) {
+    header ul li {
+        font-size: 1em;
+    }
+
+    header ul {
+        top: -20px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        top: -44px;
+        left: 60px;
+    }
+
+    header div img {
+        height: 60px;
+    }
+
+    header div {
+        top: -5px;
+        left: 5px;
+    }
+
+    header {
+        height: 50px;
+    }
+}
+
+@media (max-width: 680px) {
+    header ul li {
+        font-size: .75em;
+        display: inline;
+        float: none;
+        right: 0;
+        
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header ul {
+        top: 8px;
+        right: 0;
+        float: none;
+    }
+
+    header h1 {
+        font-size: 20px;
+        top: -44px;
+    }
+
+    header div img {
+        height: 60px;
+    }
+
+    header div {
+        top: -8px;
+        left: -40px;
+        width: 100%;
+    }
+
+    header {
+        height: 75px;
+    }
+}
+
+@media (max-width: 544px) {
+    #OverviewSect {
+        height: 1150px;
+    }
+}
+
+@media (max-width: 485px) {
+    #Banner #BannerLogo div img  {
+        height: 250px;
+    }
+
+    #Banner #BannerLogo div {
+        top: 150px;
+    }
+}
+
+@media (max-width: 510px) {
+    header ul li {
+        margin: 0 5px;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+@media (max-width: 255px) {
+    #Banner #BannerLogo div img  {
+        height: 200px;
+    }
+
+    #Banner #BannerLogo div {
+        top: 150px;
+    }
+}
