@@ -10,6 +10,10 @@ html {
     font-size: 10px;
 }
 
+body {
+    background-color: #161a1d;
+}
+
 img {
     height: 100px;
 }
@@ -99,7 +103,9 @@ header ul li a:hover:after {
 }
 
 #Banner #ImgHolder img {
-    height: 1000px;
+    position: relative;
+    top: 24px;
+    height: 100%;
 }
 
 #Banner #BannerLogo {
@@ -173,6 +179,8 @@ header ul li a:hover:after {
 }
 
 footer {
+    position: relative;
+    width: 100%;
     background-color: #0c0e0f;
     height: 40px;
     display: flex;
