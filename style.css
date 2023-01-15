@@ -160,6 +160,7 @@ header ul li a:hover:after {
 }
 
 #OverviewSect section button {
+    color: black;
     width: 200px;
     height: 40px;
     text-align: center;
