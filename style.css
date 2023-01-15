@@ -194,6 +194,10 @@ footer p {
     margin-left: 10px;
 }
 
+a {
+    color: white;
+}
+
 @media (max-width: 1110px) {
     header ul li {
         top: -85px;
